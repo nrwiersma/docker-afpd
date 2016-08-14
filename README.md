@@ -1,6 +1,6 @@
 # Docker afpd container
 
-A Docker container serving AppleTalk Filing Protocol with mDNS server
+A lightweight Docker container serving AppleTalk Filing Protocol with mDNS server.
 
 ## Configure users
 

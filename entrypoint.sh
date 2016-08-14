@@ -2,9 +2,15 @@
 
 if [ -r /users ];
 then
-    while IFS=":" read line val
+    while IFS=":" read username pass
     do
-        adduser -D -H $line
+        adduser -D -H $username
+
+        if [ ! -d "/home/$username" ]; then
+            mkdir /home/$username
+        fi
+
+        chown $username:$username /home/$username
     done < /users
 
     chpasswd --encrypted < /users
