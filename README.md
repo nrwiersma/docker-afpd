@@ -19,5 +19,5 @@ Ports 548 and 5353/udp are exposed and should be mounted to the host ports
                -v /path/to/local/afpd.conf:/usr/local/etc/afp.conf
                -p 548:548
                -p 5353:5353/udp
-               afpd:latest
+               nrwiersma/docker-afpd:3.1.8
 ```
