@@ -17,6 +17,7 @@ then
 fi
 
 sed -i '/rlimit-nproc/d' /etc/avahi/avahi-daemon.conf
+sed -i 's/#enable-dbus=yes/enable-dbus=no/g' /etc/avahi/avahi-daemon.conf
 avahi-daemon -D
 
 exec netatalk -d
