@@ -2,9 +2,11 @@
 
 if [ -r /users ];
 then
-    while IFS=":" read username pass
+    while IFS=":" read username name pass
     do
         adduser -D -H $username
+
+        sed -i "s/$username:\(.*\):\(.*\):Linux User/$username:\1:\2:$name/g" /etc/passwd
 
         if [ ! -d "/home/$username" ]; then
             mkdir /home/$username
