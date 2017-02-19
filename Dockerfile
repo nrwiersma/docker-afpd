@@ -9,7 +9,7 @@ RUN apk add --no-cache acl-dev build-base cracklib-dev db-dev krb5-dev \
                        libgcrypt-dev linux-pam-dev avahi-dev \
     && wget -O- http://ufpr.dl.sourceforge.net/project/netatalk/netatalk/$NETATALK/netatalk-$NETATALK.tar.gz | tar -zx \
     && cd netatalk-$NETATALK \
-    && ./configure --enable-debug --enable-krbV-uam --with-cracklib --with-pam-confdir=/etc/pam.d \
+    && ./configure --enable-krbV-uam --with-cracklib --enable-quota --with-tdb --with-pam-confdir=/etc/pam.d \
     && make \
     && make install \
     && cd .. \
