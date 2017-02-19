@@ -23,6 +23,3 @@ sed -i 's/#enable-dbus=yes/enable-dbus=no/g' /etc/avahi/avahi-daemon.conf
 avahi-daemon -D
 
 exec netatalk -d
-
-nrwiersma:x:1000:1000:Nicholas Wiersma,,,:/home/nrwiersma:
-nrwiersma:x:1000:1000:Nicholas Wiersma,,,:/home/nrwiersma:
