@@ -4,12 +4,23 @@ A lightweight Docker container serving AppleTalk Filing Protocol with mDNS serve
 
 ## Configure users
 
-Users can be configured using a users file mounted to ```/users```. The users file use the following format:
+Users are setup using two files: ```names``` and ```users```.
+
+The names file should mounted to ```/names``` and have the following format:
+
+```
+username:full name
+username:full name
+```
+
+The users file should mounted to ```/users``` and have the following format (as expected by ```chpasswd```):
 
 ```
 username:<password hash>
 username:<password hash>
 ```
+
+Password hashes can be created with ```mkpasswd```.
 
 ## Configuring Shares
 
