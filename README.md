@@ -1,4 +1,4 @@
-# Docker afpd container
+![Logo](http://svg.wiersma.co.za/github/project?lang=docker&title=afpd)
 
 A lightweight Docker container serving AppleTalk Filing Protocol with mDNS server.
 
