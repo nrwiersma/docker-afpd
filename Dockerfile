@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Nicholas Wiersma <nick@wiersma.co.za>
 
-ENV NETATALK 3.1.10
+ENV NETATALK 3.1.11
 
 RUN apk add --no-cache acl-dev build-base cracklib-dev db-dev krb5-dev \
                        libevent-dev tdb-dev openssl-dev openldap-dev \
