@@ -1,6 +1,6 @@
 ![Logo](http://svg.wiersma.co.za/github/project?lang=docker&title=afpd)
 
-A lightweight Docker container serving AppleTalk Filing Protocol with mDNS server.
+A lightweight Docker container serving AppleTalk Filing Protocol.
 
 ## Configure users
 
@@ -30,7 +30,7 @@ Documentation for the afpd.conf can be found in [Netatalk's documentation](http:
 
 ## Ports
 
-Ports 548 and 5353/udp are exposed and should be mounted to the host ports
+Ports 548 is exposed and should be mounted to the host ports
 
 ## Example
 
@@ -38,6 +38,5 @@ Ports 548 and 5353/udp are exposed and should be mounted to the host ports
     docker run --detach
                -v /path/to/local/afpd.conf:/usr/local/etc/afp.conf
                -p 548:548
-               -p 5353:5353/udp
                nrwiersma/docker-afpd:latest
 ```
