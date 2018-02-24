@@ -6,7 +6,7 @@ ENV NETATALK 3.1.11
 
 RUN apk add --no-cache netatalk
 
-COPY afpd.conf /etc/netatalk/afpd.conf
+COPY afpd.conf /etc/afpd.conf
 COPY entrypoint.sh /entrypoint.sh
 
 VOLUME /media
