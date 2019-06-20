@@ -1,8 +1,8 @@
-FROM alpine:3.7
+FROM alpine:3.9
 
 MAINTAINER Nicholas Wiersma <nick@wiersma.co.za>
 
-ENV NETATALK 3.1.11
+ENV NETATALK 3.1.12
 
 RUN apk add --no-cache netatalk
 
