@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REGISTRY: ghcr.io
-      IMAGE_NAME: afpd
+      IMAGE_NAME: nrwiersma/afpd
 
     steps:
       - name: Checkout code
